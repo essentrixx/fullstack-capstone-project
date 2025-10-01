@@ -1,0 +1,58 @@
+/* Task 1: Style the body */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Task 2: Create a pseudo-element for the background and blur */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url("https://source.unsplash.com/1600x900/?gifts,celebration") no-repeat center center/cover;
+    filter: blur(6px) brightness(0.6);
+    z-index: -1;
+}
+
+/* Task 3: Style the content area */
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Task 4: Add styles for headings, paragraphs, and buttons */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #ff6f61;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e85b50;
+}
